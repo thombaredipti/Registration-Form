@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Assignment</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            height: 10vh;
+            background-color: black;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto; /* clearfix to handle floated elements */
+        }
+
+        section {
+            height: 90vh;
+            width: 50vw;
+            background-color: rgb(164, 206, 243);
+            text-align: center;
+            padding: 40px;
+            float: left;
+        }
+
+        aside {
+            height: 80vh;
+            width: 40vw;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav starts -->
+
+    <nav>
+        <h1>Bank Registration Form</h1>
+    </nav>
+
+    <!-- nav ends -->
+
+    <div class="container">
+        <!-- section starts -->
+
+        <section>
+
+            <form>
+
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName"><br><br>
+
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName"><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="telephone">Telephone:</label>
+                <input type="text" id="telephone" name="telephone" maxlength="10"><br><br>
+
+                <label for="gender">Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender"><br><br>
+
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="education">Education Level: </label>
+                <label for="high school">High School or below</label>
+                <input type="radio" id="high school" name="education">
+                <label for="undergraduate">Undergraduate</label>
+                <input type="radio" id="undergraduate" name="education">
+                <label for="masters">Masters Degree</label>
+                <input type="radio" id="masters" name="education">
+                <label for="phd">PhD</label>
+                <input type="radio" id="phd" name="education"><br><br>
+
+                <label for="identification">Form of identification: </label>
+                <label for="driving licence">Driving licence</label>
+                <input type="checkbox" id="driving licence" name="driving licence">
+                <label for="passport">Passport</label>
+                <input type="checkbox" id="passport" name="passport">
+                <label for="student id">Student ID</label>
+                <input type="checkbox" id="student id" name="student id"><br><br>
+
+                <label for="upload">Upload Image:</label>
+                <input type="file" id="upload" name="upload" multiple><br><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="submit" value="Clear">
+                
+
+            </form>
+
+        </section>
+
+        <!-- section ends -->
+
+        <aside>
+            <img src="https://img.freepik.com/premium-vector/bank-customer-service-registration-vector-illustration_106954-2531.jpg" alt="Bank Registration" style="width: 100%; height: 100%;">
+        </aside>
+    </div>
+
+</body>
+
+</html>
